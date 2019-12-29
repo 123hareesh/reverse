@@ -4,7 +4,7 @@ node {
 
     try {
         stage ('Clone') {
-        	//checkout scm
+        	checkout scm
         }
         stage ('Build') {
         	echo "add build steps here"
