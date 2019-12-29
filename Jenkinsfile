@@ -7,7 +7,7 @@ node {
         	//checkout scm
         }
         stage ('Build') {
-        	sh "echo 'shell scripts to build project...'"
+        	sh label: '', script: 'echo \'shell scripts to deploy to server...\''
         }
         stage ('Tests') {
 	       
@@ -18,4 +18,7 @@ node {
             sh "echo 'shell scripts to deploy to server...'"
       	}
     } 
+	catch (err) {
+        sh "echo 'some error 
+    }
 }
