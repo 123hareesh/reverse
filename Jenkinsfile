@@ -7,7 +7,7 @@ node {
         	//checkout scm
         }
         stage ('Build') {
-        	sh label: '', script: 'echo \'shell scripts to deploy to server...\''
+        	bat label: '', script: 'echo \'shell scripts to run static tests...\''
         }
         stage ('Tests') {
 	       
