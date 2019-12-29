@@ -7,18 +7,18 @@ node {
         	//checkout scm
         }
         stage ('Build') {
-        	bat label: '', script: 'echo \'shell scripts to run static tests...\''
+        	echo "add build steps here"
         }
         stage ('Tests') {
 	       
-	            sh "echo 'shell scripts to run static tests...'"
+	          echo 'shell scripts to run static tests...'
 	        
             }
       	stage ('Deploy') {
-            sh "echo 'shell scripts to deploy to server...'"
+                 echo 'shell scripts to deploy to server...'
       	}
     } 
 	catch (err) {
-        sh "echo 'some error ' "
+                echo 'some error '
     }
 }
