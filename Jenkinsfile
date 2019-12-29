@@ -19,6 +19,6 @@ node {
       	}
     } 
 	catch (err) {
-        sh "echo 'some error 
+        sh "echo 'some error ' "
     }
 }
